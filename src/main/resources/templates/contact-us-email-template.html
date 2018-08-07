@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title th:remove="all">Template for Email: Contact Us Email</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<div style="">
+		Hello,
+		<br/><br/>
+		You have a new message from <span th:text="${token_name}" />.
+		<br/>
+		The contact Information provided by <span th:text="${token_name}" /> is as below
+		<br/>
+		Email: <span th:text="${token_email}" />
+        <br/>
+        Phone: <span th:text="${token_phone}" />
+		<br/><br/>
+		The reason for the enquiry is: <span th:text="${token_reason}" />.
+		<br/><br/>
+		Below are the contents of the message
+		<br/><br/>
+		<span style="border:1px solid #CCCCCC; padding:10px;" th:text="${token_detailedDescription}" />
+		<br/><br/>
+		Thanks, <br /> <em>Slade Health Team</em>
+		<br/><br/>
+		<div style="font-size:11px;">This is an auto generated email.</div>
+	</div>
+</body>
+</html>

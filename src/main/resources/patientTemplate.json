@@ -1,0 +1,40 @@
+{  
+ "columnTemplate" :  
+	[
+		{
+			"name": "Patient ID (Blank to Add)",
+			"columnNo" : 1,
+			"type": "NUMBER"
+		},
+		{
+			"name": "Family Name",
+			"columnNo" : 2,
+			"required": false,
+			"type": "STRING"
+		},
+		{
+			"name": "Given Name",
+			"columnNo" : 3,
+			"required": false,
+			"type": "STRING"
+		},
+		{
+			"name": "MRN / UR",
+			"columnNo" : 4,
+			"required": false,
+			"type": "STRING"
+		},
+		{
+			"name": "Date of Birth",
+			"columnNo" : 5,
+			"type": "DATE",
+			"dateFormat" : "dd/MM/yyyy"
+		},
+		{
+			"name": "Inactive",
+			"columnNo" : 6,
+			"type": "ENUM",
+			"enumValues": ["Y","N"]
+		}
+	] 
+}
